@@ -15,4 +15,23 @@ owl.owlCarousel({
     nav: true,
 });
 
-//
+//Popup
+
+const popup = document.getElementById("popup");
+const btnOpen = document.querySelector(".btnOpen");
+const btnClose = document.querySelector(".close");
+
+btnOpen.addEventListener("click", open);
+btnClose.addEventListener("click", close);
+
+
+
+
+function open(){
+    popup.style.display = "block";
+    
+    
+}
+function close(){
+    popup.style.display = "none";
+}
